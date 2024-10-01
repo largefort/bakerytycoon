@@ -4,51 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bakery Tycoon</title>
-    <!-- Framework7 CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/framework7/6.0.0-beta.21/css/framework7.bundle.min.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="app">
-        <div class="view view-main">
-            <div class="page">
-                <div class="navbar">
-                    <div class="navbar-inner">
-                        <div class="title">Bakery Tycoon</div>
-                    </div>
-                </div>
-                <div class="page-content">
-                    <div class="block">
-                        <p>Coins: <span id="coins">0</span></p>
-                        <p>Baked Goods: <span id="goods">0</span></p>
-                        <p>Customers: <span id="customers">0</span></p>
-                    </div>
-                    <div class="block">
-                        <h2>Produce Baked Goods</h2>
-                        <div class="buttons-row">
-                            <a href="#" id="produce-bread" class="button">Produce Bread</a>
-                            <a href="#" id="produce-cake" class="button">Produce Cake</a>
-                            <a href="#" id="produce-cookie" class="button">Produce Cookie</a>
-                        </div>
-                    </div>
-                    <div class="block">
-                        <h2>Sell Baked Goods</h2>
-                        <a href="#" id="sell-goods" class="button">Sell Baked Goods</a>
-                    </div>
-                    <div class="block">
-                        <h2>Shop</h2>
-                        <a href="#" id="hire-baker" class="button">Hire Baker (10 coins)</a>
-                        <a href="#" id="hire-cashier" class="button">Hire Cashier (15 coins)</a>
-                        <a href="#" id="upgrade" class="button">Upgrade Bakery (10 coins)</a>
-                        <a href="#" id="research" class="button">Research New Recipes (15 coins)</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    <h1>Bakery Tycoon</h1>
+    <div id="coins">Coins: 0</div>
+    <div id="goods-stat">Goods: 0</div> <!-- Consolidated goods display -->
+    <div id="customers">Customers: 0</div>
 
-    <!-- Framework7 JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/framework7/6.0.0-beta.21/js/framework7.bundle.min.js"></script>
+    <button id="produce-bread">Produce Bread</button>
+    <button id="produce-cake">Produce Cake</button>
+    <button id="produce-cookie">Produce Cookie</button>
+    <button id="sell-goods">Sell Goods</button>
+
+    <button id="hire-baker">Hire Baker (10 Coins)</button>
+    <button id="hire-cashier">Hire Cashier (15 Coins)</button>
+    <button id="upgrade">Upgrade Bakery (10 Coins)</button>
+    <button id="research">Research New Recipe (15 Coins)</button>
+
     <script src="script.js"></script>
 </body>
 </html>
