@@ -1,53 +1,83 @@
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f8e4d4; /* Light bakery color */
-    color: #5b3e24; /* Dark brown text color */
+/* Basic Reset */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-.container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
+/* Body Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f0e3; /* Light cream background */
+    color: #5d3a27; /* Dark brown text */
     text-align: center;
-    background-color: #ffffff; /* White background for container */
-    border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
 }
 
+/* Header Styles */
 h1 {
-    font-size: 2.5em;
-    margin-bottom: 10px;
-    color: #ab6e4d; /* Light brown */
+    color: #c99a7d; /* Soft peach color */
+    margin-bottom: 20px;
 }
 
-.stats {
-    margin: 20px 0;
+/* Display Elements */
+#coins, #goods-stat, #customers {
+    font-size: 1.5rem;
+    margin: 15px 0;
+    padding: 10px;
+    border: 2px solid #c99a7d; /* Soft peach border */
+    border-radius: 10px;
+    background-color: #fff; /* White background for stats */
 }
 
-.actions {
-    margin: 20px 0;
-}
-
-.button {
-    background-color: #d69a6c; /* Light orange */
-    color: #ffffff;
+/* Button Styles */
+button {
+    background-color: #ffcc80; /* Light orange */
     border: none;
+    color: #5d3a27; /* Dark brown text */
+    padding: 10px 20px;
+    margin: 10px;
     border-radius: 5px;
-    padding: 10px 15px;
-    margin: 5px;
+    font-size: 1rem;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s ease;
 }
 
-.button:hover {
-    background-color: #ba763e; /* Darker orange on hover */
+button:hover {
+    background-color: #ffb74d; /* Darker orange on hover */
 }
 
+/* Alert Box Styles */
+.alert {
+    background-color: #f9c2c2; /* Light pink */
+    color: #5d3a27; /* Dark brown text */
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid #e57373; /* Red border */
+    border-radius: 5px;
+    position: relative;
+    animation: fade-in 0.5s;
+}
+
+/* Animation for Alert */
+@keyframes fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Responsive Styles */
 @media (max-width: 600px) {
-    .button {
-        width: 100%;
-        font-size: 1.1em;
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    button {
+        font-size: 0.8rem;
+        padding: 8px 16px;
+    }
+
+    #coins, #goods-stat, #customers {
+        font-size: 1.2rem;
     }
 }
+
